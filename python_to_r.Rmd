@@ -1,23 +1,14 @@
----
-title: "python_to_r"
-author: "Renee Liu"
-date: "January 28, 2019"
-output:
-  html_document: default
-  pdf_document: default
----
+# title: "python_to_r"
+# author: "Renee Liu"
+# date: "January 28, 2019"
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## References
 [Tutorial](https://gist.github.com/primaryobjects/8038d345aae48ae48988906b0525d175)
+[Repo for the functions used here](https://github.com/bmschmidt/wordVectors)
 [Kaggle Demo](https://www.kaggle.com/rtatman/gender-bias-in-word-embeddings/notebook)
 [Deep Learning R pretrained embeddings](https://jjallaire.github.io/deep-learning-with-r-notebooks/notebooks/6.1-using-word-embeddings.nb.html)
 
-
-```{r echo = False}
 install.packages("devtools")
 library(tidyverse)
 library(data.table)
@@ -26,19 +17,9 @@ library(devtools)
 library(wordVectors)
 library(httr)
 library(tm)
-
-```
-
-```{r}
 devtools::install_github("bmschmidt/wordVectors")
-
-
-
-```
-
-```{r}
 # Helper function to train a word2vec model from file.txt or load an existing one from file.bin.
-#
+
 word2vec <- function(fileName) {
   if (grepl('.txt', fileName, fixed=T)) {
     # Convert test.txt to test.bin.
@@ -62,9 +43,6 @@ word2vec <- function(fileName) {
   }
   model}
 
-```
-
-```{r}
 # Read in data and remove stopwords
 # Read text file.
 doc <- readChar('data_sample.txt', file.info('data_sample.txt')$size)
@@ -81,4 +59,3 @@ cat(doc, file="data_sample_clean.txt",sep="\n",append=TRUE)
 model <- word2vec('data_sample_clean.txt')
 model %>% closest_to("he")
 
-```
