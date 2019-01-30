@@ -3,12 +3,6 @@
 # date: "January 28, 2019"
 
 
-## References
-[Tutorial](https://gist.github.com/primaryobjects/8038d345aae48ae48988906b0525d175)
-[Repo for the functions used here](https://github.com/bmschmidt/wordVectors)
-[Kaggle Demo](https://www.kaggle.com/rtatman/gender-bias-in-word-embeddings/notebook)
-[Deep Learning R pretrained embeddings](https://jjallaire.github.io/deep-learning-with-r-notebooks/notebooks/6.1-using-word-embeddings.nb.html)
-
 install.packages("devtools")
 library(tidyverse)
 library(data.table)
