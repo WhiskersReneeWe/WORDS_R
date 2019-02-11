@@ -104,7 +104,7 @@ return_bias_score <-function(words_header, female_header="female_words", male_he
 
 #############INPUT: Neutral word lis#################
 #############OUTPUT: Bias scores for each neutral word lists
-create_bias_scores <- function(neutral_words_file){
+create_bias_scores <- function(neutral_word_file){
 bias_scores <- NULL
 for(neu_words in colnames(neutral_word_lists)){
   bias_scores = append(bias_scores, return_bias_score(neu_words))
