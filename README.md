@@ -12,5 +12,5 @@
 * https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/
 
 ## Acknowledgement
-[Ben Schmidt](benschmidt.org)
-[This Great Person's tutorial](https://gist.github.com/primaryobjects/8038d345aae48ae48988906b0525d175)
+* [Ben Schmidt](benschmidt.org)
+* [This Great Person's tutorial](https://gist.github.com/primaryobjects/8038d345aae48ae48988906b0525d175)
